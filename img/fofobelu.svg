@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Banner Beluga Bays - cafeteria">
+  <defs>
+    <!-- Gradiente de fundo -->
+    <linearGradient id="bgGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFF7EE"></stop>
+      <stop offset="1" stop-color="#FFEAD6"></stop>
+    </linearGradient>
+
+    <!-- Sombra suave -->
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.12"></feDropShadow>
+    </filter>
+
+    <!-- Gradiente para a xícara -->
+    <linearGradient id="cupGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFF"></stop>
+      <stop offset="1" stop-color="#F4EDE8"></stop>
+    </linearGradient>
+
+    <!-- Cores (mude aqui para personalizar rápido) -->
+    <style type="text/css">
+      :root{
+        --primary:#4A6FA5;      /* cor do texto principal */
+        --accent:#F3B08A;       /* detalhes (latte / xícara) */
+        --beluga:#FFFFFF;       /* corpo beluga */
+        --cheek:#FFB4C2;        /* bochecha rosada */
+        --bg1:#FFF7EE;          /* gradiente inicio */
+        --bg2:#FFEAD6;          /* gradiente fim */
+      }
+      .brand{ font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight:700; fill:var(--primary); }
+      .tag{ font-family: "Segoe UI", Roboto, Arial, sans-serif; font-size:18px; fill:#7c7c7c;}
+      .cursive{ font-family: "Brush Script MT", "Pacifico", cursive; font-size:58px; fill:var(--primary); }
+    </style>
+  </defs>
+
+  <!-- Fundo arredondado -->
+  <rect x="12" y="12" rx="22" ry="22" width="1176" height="336" fill="url(#bgGrad)" stroke="#F0D9C6" stroke-width="2"></rect>
+
+  <!-- DECOR: luzes e partículas -->
+  <g opacity="0.9" filter="url(#softShadow)">
+    <circle cx="980" cy="40" r="6" fill="#FFE3C9" opacity="0.7"></circle>
+    <circle cx="1020" cy="70" r="4" fill="#FFF1E0" opacity="0.6"></circle>
+    <circle cx="800" cy="20" r="5" fill="#FFF8F2" opacity="0.5"></circle>
+  </g>
+
+  <!-- BELUGA (lado esquerdo) -->
+  <g transform="translate(70,40)">
+    <!-- corpinho -->
+    <ellipse cx="170" cy="150" rx="140" ry="95" fill="var(--beluga)" stroke="#EDEEF0" stroke-width="3" filter="url(#softShadow)"></ellipse>
+    <!-- nadadeira esquerda -->
+    <path d="M85 175 q -40 20 -10 40 q 30 15 50 -5 q -10 -35 -40 -35z" fill="var(--beluga)" stroke="#E9E9EC" stroke-width="2"></path>
+    <!-- nadadeira direita -->
+    <path d="M255 170 q 40 18 12 40 q -28 16 -48 -2 q 8 -34 36 -38z" fill="var(--beluga)" stroke="#E9E9EC" stroke-width="2"></path>
+    <!-- olho -->
+    <circle cx="200" cy="120" r="14" fill="#2b2b2b"></circle>
+    <circle cx="210" cy="112" r="5" fill="#fff" opacity="0.9"></circle>
+    <!-- bochecha rosada -->
+    <ellipse cx="160" cy="135" rx="22" ry="12" fill="var(--cheek)" opacity="0.9"></ellipse>
+    <!-- sorriso -->
+    <path d="M178 145 q18 18 45 0" stroke="#c4c4c6" stroke-width="3" fill="none" stroke-linecap="round"></path>
+
+    <!-- XÍCARA na frente -->
+    <g transform="translate(110,170)">
+      <ellipse cx="80" cy="24" rx="75" ry="28" fill="url(#cupGrad)" stroke="#E0C6B0" stroke-width="3"></ellipse>
+      <rect x="30" y="24" width="100" height="60" rx="18" ry="18" fill="url(#cupGrad)" stroke="#E0C6B0" stroke-width="3"></rect>
+      <!-- alça -->
+      <path d="M130 42 q34 4 34 24 q0 26 -34 26" fill="none" stroke="#E0C6B0" stroke-width="6"></path>
+      <!-- espuma com coração -->
+      <ellipse cx="80" cy="52" rx="48" ry="20" fill="#F6E8DF"></ellipse>
+      <path d="M80 50 q8 -6 18 0 q -6 10 -18 12 q -12 -2 -18 -12 q 10 -6 18 0z" fill="#F1C6A6"></path>
+      <!-- texto pequeno na xícara (marcação) -->
+      <text x="20" y="100" font-family="Verdana, Arial, sans-serif" font-size="12" fill="#C08A68">Beluga Bays</text>
+    </g>
+  </g>
+
+  <!-- NOME / TEXTO (lado direito) -->
+  <g transform="translate(420,100)">
+    <!-- Texto principal estilo cursivo -->
+    <text x="0" y="60" class="cursive" aria-hidden="false">Beluga Bays</text>
+
+    <!-- Tagline menor -->
+    <text x="8" y="100" class="tag">cafeteria · aconchegante</text>
+
+    <!-- Pequeno slogan em bloco -->
+    <rect x="0" y="120" rx="10" ry="10" width="520" height="90" fill="#FFF8F4" stroke="#F0D9C6" stroke-width="1"></rect>
+    <text x="18" y="155" font-family="Segoe UI, Roboto, Arial" font-size="16" fill="#6e6e6e">
+      Café Especial · Salgados Artesanais · Ambiente Aconchegante
+    </text>
+  </g>
+
+  <!-- Pequenos detalhes florais à direita para fofura -->
+  <g transform="translate(960,230)" opacity="0.95">
+    <circle cx="0" cy="0" r="8" fill="#FEE2E6"></circle>
+    <circle cx="16" cy="-6" r="6" fill="#FFF5E6"></circle>
+    <rect x="-6" y="14" width="12" height="3" rx="2" fill="#D7EFD6"></rect>
+  </g>
+</svg>

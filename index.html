@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Café Aurora — Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Café <span>Belugas bays</span></a>
+
+            <!-- Mobile toggle -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+
+                    <!-- Dropdown clicável -->
+                    <li class="dropdown">
+                        <input type="checkbox" id="dd-menu" class="dd-checkbox">
+                        <label for="dd-menu" class="drop-mouse">Menu ▾</label>
+
+                        <div class="dropdown-content">
+                            <a href="menu.html#cafes">Cafés</a>
+                            <a href="menu.html#salgados">Salgados</a>
+                            <a href="menu.html#doces">Doces</a>
+                        </div>
+                    </li>
+
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1 style="font-size: 50px; font-family: Cascadia Mono,sans-serif;">Bem-vindo ao Café Belugas Bays</h1>
+                    <p><i>Grãos selecionados, torra artesanal e um ambiente acolhedor. Venha tomar o melhor café da cidade.</i></p>
+                    <a href="menu.html" class="btn primary">Ver o menu</a>
+                </div>
+                <div class="hero-image">
+                    <img style= "width:800px; height:500;" src="img/belugass.svg" alt="Xícara de café">
+                </div>
+            </div>
+        </section>
+    
+        <!-- Destaques -->
+        <section class="destaques container">
+            <article class="card">
+                <img src="img/ChatGPT Image 3 de mar. de 2026, 17_40_16.png" alt="Café especial">
+                <h3>Café Especial</h3>
+                <p>Blend exclusivo, notas frutadas e finalização aveludada.</p>
+            </article>
+
+            <article class="card">
+                <img src="img/salgadosbeluguinha.png" alt="Salgados">
+                <h3>Salgados Artesanais</h3>
+                <p>Receitas caseiras preparadas diariamente.</p>
+            </article>
+
+            <article class="card">
+                <img src="img/sorriso.png" alt="Ambiente">
+                <h3>Ambiente Aconchegante</h3>
+                <p>Perfeito para trabalhar ou encontrar amigos.</p>
+            </article>
+        </section>
+        <button style="font-family: fantasy;" onclick="tocarMusica()">🐳 Ativar Música</button>
+
+        <audio id="musica" loop >
+            <source src="music/juliush-chillout-cafe-4176.mp3" type="audio/mpeg">
+        </audio>
+
+        <script>
+            function tocarMusica() {
+            document.getElementById("musica").play();
+        }
+        </script>
+
+        <!-- Seção Filiais: coloque isso onde quiser no body -->
+        <section class="filiais">
+                <h2>Beluga pelo Mundo</h2>
+
+                    <div class="grid-filiais">
+            <article class="card">
+                <figure>
+                    <img src="img/ANTARTICA.png" alt="Imagem da filial"> 
+                <figcaption> 
+                 <h3>Beluga Ice Lounge</h3>
+                 <p class="curta">Cafeteria encravada entre geleiras, com bebidas quentes especiais.</p>
+                </figcaption>
+      </figure>
+    </article>
+
+    <article class="card">
+      <figure>
+        <img src="img/NADAR.png" alt="Imagem da filial">
+        <figcaption>
+          <h3>Beluga Ocean Café</h3>
+          <p class="curta">Experiência subaquática com vista para peixes coloridos.</p>
+          
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="card">
+      <figure>
+        <img src="img/PARIS.png" alt="Imagem da filial">
+        <figcaption>
+          <h3>Beluga Paris</h3>
+          <p class="curta">Loja elegante com decoração art déco e croissants exclusivos.</p>
+          
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="card">
+      <figure>
+        <img src="img/JAPAO.png" alt="Imagem da filial">
+        <figcaption>
+          <h3>Beluga Sakura</h3>
+          <p class="curta">Ambiente minimalista com menu de matcha e doces sazonais.</p>
+          
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="card">
+      <figure>
+        <img src="img/RIOJANEIRO.png" alt="Imagem da filial">
+        <figcaption>
+          <h3>Beluga Carioca</h3>
+          <p class="curta">Quiosque à beira-mar com cafés gelados e vibe descontraída.</p>
+          
+        </figcaption>
+      </figure>
+    </article>
+  </div>
+</section>
+
+    <!---------outrafilial-->
+    <section class="filiais">
+
+  <div class="card">
+    <img src="img/ANTARTICA.png">
+    <h3>Beluga Ice Lounge</h3>
+    <a href="#modal1" class="btn-saiba">Saiba mais</a>
+  </div>
+
+  <div class="card">
+    <img src="img/NADAR.png">
+    <h3>Beluga Ocean Café</h3>
+    <a href="#modal2" class="btn-saiba">Saiba mais</a>
+  </div>
+
+</section>
+
+            <!-- MODAL 1 -->
+            <div id="modal1" class="modal">
+            <div class="modal-content">
+                <a href="#" class="fechar">✕</a>
+                <h2>Beluga Ice Lounge</h2>
+                <p>
+                Cafeteria encravada entre geleiras, bebidas quentes artesanais
+                e eventos musicais intimistas.
+                </p>
+            </div>
+            </div>
+
+        <!-- MODAL 2 -->
+        <div id="modal2" class="modal">
+        <div class="modal-content">
+            <a href="#" class="fechar">✕</a>
+            <h2>Beluga Ocean Café</h2>
+            <p>
+            Janelas subaquáticas, menu exclusivo e café blend Deep Blue.
+            </p>
+        </div>
+        </div>
+
+        <!-- Depoimentos -->
+<section class="depoimentos">
+    <div class="container">
+        <h2 style="font-family:serif; font-size: 50px;">O que dizem nossos clientes</h2>
+
+        <div class="depoimentos-grid">
+            <!-- Depoimento 1 -->
+            <article class="testimonial">
+                <div class="testimonial-image">
+                    <img src="img/computador.png" alt="João Silva tomando café" loading="lazy">
+                </div>
+                <div class="testimonial-body">
+                    <p class="quote">“O melhor cappuccino da cidade! Ambiente perfeito para trabalhar.”</p>
+                    <p class="author">João Silva <span class="role">• Designer</span></p>
+                </div>
+            </article>
+
+            <!-- Depoimento 2 -->
+            <article class="testimonial">
+                <div class="testimonial-image">
+                    <img src="img/beluga bone.png" alt="Maria Oliveira sorrindo" loading="lazy">
+                </div>
+                <div class="testimonial-body">
+                    <p class="quote">“Atendimento incrível e torras sensacionais. Recomendo sempre!”</p>
+                    <p class="author">Maria Oliveira <span class="role">• Estudante</span></p>
+                </div>
+            </article>
+
+            <!-- Depoimento 3 -->
+            <article class="testimonial">
+                <div class="testimonial-image">
+                    <img src="img/emprededoramigo.png" alt="Carlos Pereira no café" loading="lazy">
+                </div>
+                <div class="testimonial-body">
+                    <p class="quote">“Ótimo lugar para reuniões. Wi-fi funcionando e café excepcional.”</p>
+                    <p class="author">Carlos Pereira <span class="role">• Empreendedor</span></p>
+                </div>
+            </article>
+
+            <!-- Depoimento 4 -->
+            <article class="testimonial">
+                <div class="testimonial-image">
+                    <img src="img/Gemini_Generated_Image_ytxozhytxozhytxo.png" alt="casal de idosos" loading="lazy">
+                </div>
+                <div class="testimonial-body">
+                    <p class="quote">“Salgados frescos e preço justo. Volto toda semana!”</p>
+                    <p class="author">Casal Feliz! <span class="role">• Professora/Doutor</span></p>
+                </div>
+            </article>
+            <!-- Depoimento 5 -->
+            <article class="testimonial">
+                <div class="testimonial-image">
+                    <img src="img/filha.png" alt="Criança pintando" loading="lazy">
+                </div>
+                <div class="testimonial-body">
+                    <p class="quote">“Eu amo vir aqui com meus Pais!”</p>
+                    <p class="author">Beluguinha Jr <span class="role">• Aspirante a astronauta!</span></p>
+                </div>
+            </article>
+            <!-- Depoimento 6 -->
+            <article class="testimonial">
+                <div class="testimonial-image">
+                    <img src="img/casaljovem.png" alt="casal de Jovens" loading="lazy">
+                </div>
+                <div class="testimonial-body">
+                    <p class="quote">“Amo Trazer Nosso filho aqui.”</p>
+                    <p class="author">Sr Beluga Pai/Mr beluga Mãe! <span class="role">• Engenheiro/enfermeira</span></p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <h3>Café Belugas Bays</h3>
+                <p>Rua do Aroma, 123 • Centro • (00) 1234-5678</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; <span id="ano"></span> Café Belugas Bays. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // pequeno script só para atualizar ano no rodapé (opcional)
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
